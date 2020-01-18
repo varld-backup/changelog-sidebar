@@ -1,0 +1,32 @@
+{
+  "name": "changelog-sidebar",
+  "version": "0.0.1-beta",
+  "license": "MIT",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "author": {
+    "name": "Tobias Herber",
+    "url": "https://herber.space"
+  },
+  "files": [
+    "dist/**"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/varld/changelog-sidebar.git"
+  },
+  "scripts": {
+    "build": "microbundle -f cjs,umd",
+    "dev": "microbundle watch -f cjs,umd",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "microbundle": "^0.11.0"
+  },
+  "dependencies": {
+    "changelog-core": "^0.0.3-beta"
+  }
+}
