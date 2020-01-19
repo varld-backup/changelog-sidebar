@@ -32,6 +32,14 @@ class BarSDK extends CoreSDK {
     });
   }
 
+  public remove() {
+    if (!this.element) return false;
+
+    this.element.remove();
+
+    return super.remove();
+  }
+
   public open() {
     this.element.style.right = '0px';
     this.isOpen = true;
